@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Project 3 Script 1</title>
+</head>
+
+<body>
+<script>
+    var number=Number(prompt("Enter an integer greater than zero")); //prompt for an integer
+    document.write("<p>");
+    if(number<=0){ //start of if statement
+        document.write("Invalid Input"); 
+    }
+    else{   //else statement     
+        var sum=0;
+        for(var i=number; i>=0; i--){ //for statement
+            sum=sum+i;
+            if (i==0) { //if statement
+               document.write(i+" = "); //prints beginning of equation
+            }
+            else { //else statement
+                document.write(i+" + "); //prints the plus sign
+            }
+        }
+        document.write(sum); //prints the sum
+    }
+    document.write("</p>");
+</script>
+
+
+</body>
+</html>

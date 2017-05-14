@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Project3 Script 2</title>
+</head>
+
+<body>
+    <script>
+        var rows=Number(prompt("Enter the number of rows")); //prompt for rows
+        while (rows<=0) {
+            rows=Number(prompt("Enter the number of rows")); //re-prompts if negative
+        }
+        var columns=Number(prompt("Enter the number of columns")); //prompt for columns
+        while (columns<=0) { //while loop
+            columns=Number(prompt("Enter the number of columns")); //re-prompts if negative
+        }
+        for (var row = 0; row < rows; row++){ //outer loop 
+             document.write("<p>")
+            for(var col=0; col < columns; col++){ //inner loop
+                document.write("*"); //outputs the stars
+            }
+            document.write("</p>")
+        }
+    </script>
+
+
+</body>
+</html>
